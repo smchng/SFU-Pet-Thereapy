@@ -1,0 +1,423 @@
+/*CSS for booking page*/
+
+/*grid code from lecture*/
+.grid{
+  display: grid;
+  box-sizing: border-box;
+}
+
+/*images are borderless and less opaque when not selected*/
+.image-spacing{
+  /*https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap*/
+  /*adds gap to images and gives an invisible border*/
+  border: 0.5rem solid #38384e;
+  opacity: 75%;
+}
+
+/*https://css-snippets.com/adding-a-border-to-an-image-on-hover/*/
+/*add hover border effect to the 4 images in booking selection*/
+.image-spacing:hover, .image-spacing:focus{
+  border-color: white;
+  opacity: 100%;
+}
+
+/*Book session button at bottom right (same code as lecture exercise)*/
+.book-session-button{
+  text-align: center;
+  background-color: #777777;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+/*hover effect for book button*/
+.book-session-button:hover, .book-session-button:focus{
+  background-color: #4d4d4d;
+  color: white;
+}
+
+/*booking xena text in right box*/
+.xena-text{
+  text-align:center;
+}
+
+/*input rectangles*/
+.input-detail{
+  color: black;
+}
+
+
+/*RESPONSIVITY*/
+
+@media (min-width: 5rem){
+
+  /*Size of images change and rearrange depending on the width of the page*/
+  .grid.two-column-imgs{
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
+  }
+
+  /*changes the image and input section organization to stacked*/
+  .grid.two-column-input-imgs{
+    grid-template-columns: 1fr;
+  }
+
+  /*Title of page text*/
+  .book-session-text h1{
+    margin-left:0.5rem;
+    padding-top:2rem;
+    font-size: 1.75rem;
+  }
+
+  /*the 4 images in booking selection*/
+  .image-spacing{
+    margin-bottom:1rem;
+    width:auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /*booking finalization button styling*/
+  .book-session-button{
+    border: 0.25rem solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  /*Small text blurb when xena is selected*/
+  .xena-text p{
+    margin-bottom:4rem;
+    font-size:1rem;
+  }
+  .xena-text h1{
+    font-size:1.75rem;
+    margin-bottom:1rem;
+  }
+
+  /*info area*/
+  /*Name: Email: Date of Session: styling*/
+  .info-input label{
+    font-size: 1.25rem;
+  }
+
+  /*spacing between the first 2 lines of Name: input area*/
+  .first-name-spacing{
+    margin-bottom:1rem;
+    margin-top:0rem;
+  }
+
+  /*input rectangles styling of box edges*/
+  .input-detail{
+    border-radius: 0.45rem;
+    padding: 0.2rem;
+    width: 12.5rem;
+  }
+
+  /*Box around the text*/
+  .outer-box-input{
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    max-height: 21rem;
+    max-width: 16rem;
+    padding: 1rem 3rem 2rem 1rem;
+    margin: 0rem 2rem 1rem 1rem;
+  }
+
+  /*Separate box code around xena text*/
+  .outer-box-xena-text{
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    max-width: 16rem;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0rem 2rem 1rem 1rem;
+
+  }
+}
+
+@media (min-width: 20rem){
+  /*Box code again to adjust box padding*/
+  .outer-box-input{
+    padding: 1rem 3rem 2rem 1rem;
+    margin: 0rem 2rem 1rem 2rem;
+  }
+  .outer-box-xena-text{
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0rem 2rem 1rem 2rem;
+  }
+}
+
+@media (min-width: 30rem){
+
+  /*title of page*/
+  .book-session-text h3{
+    margin-left:2.5rem;
+    font-size: 2.25rem;
+  }
+
+  /*Entire section aligning to keep away from edge of page*/
+  .booking{
+    left: 50%;
+  }
+
+  /*final booking appointment button*/
+  .book-session-button{
+    border: 0.25rem solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  /*text*/
+  .xena-text p{
+    margin-bottom:4rem;
+    font-size:1rem;
+  }
+  .xena-text h3{
+    font-size:1.75rem;
+    margin-bottom:1rem;
+  }
+
+  /*info are*/
+  .info-input label{
+    font-size: 1.5rem;
+  }
+  .first-name-spacing{
+    margin-bottom:1rem;
+    margin-top:0rem;
+  }
+  .input-detail{
+    border-radius: 0.45rem;
+    padding: 0.2rem;
+    width: 18rem;
+  }
+  
+  /*boxes again*/
+  .outer-box-input{
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    max-height: 21rem;
+    max-width: 21rem;
+    padding: 1rem 3rem 2rem 1rem;
+    margin: 0rem 2rem 1rem 3rem;
+  }
+  .outer-box-xena-text{
+    border:0.2rem solid #fff;
+    border-radius: 1rem;
+    max-width: 21rem;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0rem 2rem 1rem 3rem;
+  }
+}
+
+@media (min-width: 60rem){
+  .book-session-text{
+    margin-left:5rem;
+    margin-top:3rem;
+  }
+
+  /*changes spacing of images on desktop*/
+  .image-spacing{
+    width:auto;
+    height: auto;
+    max-width: 100%;
+    margin-left: 5rem;
+  }
+
+  /*new grid changes for desktop size screens*/
+  /*input and xena text now separated in to 2*/
+  .grid.two-column{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*Changes the image and input to stacked*/
+  .grid.two-column-input-imgs{
+    grid-template-columns: 1fr;
+  }
+
+  /*images are in one row now*/
+  .grid.two-column-imgs{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+
+  .book-session-button{
+    border: 0.25rem solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  /*text*/
+  .xena-text p{
+    margin-bottom:4rem;
+    font-size:1rem;
+  }
+  .xena-text h3{
+    font-size:1.75rem;
+    margin-bottom:1rem;
+  }
+
+  /*info area*/
+  .info-input label{
+    font-size: 1.5rem;
+  }
+  .first-name-spacing{
+    margin-bottom:1rem;
+    margin-top:0rem;
+  }
+  .input-detail{
+    border-radius: 0.45rem;
+    padding: 0.2rem;
+    width: 18rem;
+  }
+
+  /*boxes*/
+  .outer-box-input{
+    border:0.2rem solid #fff;
+    border-radius: 1rem;
+    max-height: 21rem;
+  }
+  .outer-box-xena-text{
+    border:0.2rem solid #fff;
+    border-radius: 1rem;
+  }
+}
+
+/*CODE REPeTITION FURTHER ON*/
+
+@media (min-width: 60rem){
+  /*the 4 images in booking selection*/
+.image-spacing{
+  margin-bottom:3.5rem;
+  margin-left: 0rem;
+}
+
+.book-session-text{
+    margin-left:4rem;
+  }
+
+  .book-imgs{
+    margin-left:4rem;
+    margin-right:4rem;
+  }
+
+  .book-session-button{
+    border: 0.25rem solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  .xena-text p{
+    margin-bottom:4rem;
+    font-size:1rem;
+  }
+
+  .xena-text h3{
+    font-size:2.5rem;
+    margin-bottom:0.5rem;
+  }
+
+    /*info are*/
+  /*Name: Email: Date of Session:*/
+  .info-input label{
+    font-size: 2rem;
+  }
+
+  /*spacing between the first 2 lines of Name: input area*/
+  .first-name-spacing{
+    margin-bottom:1rem;
+    margin-top:0rem;
+  }
+  .input-detail{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 20rem;
+  }
+
+  .outer-box-input{
+    border:0.2rem solid #fff;
+    border-radius: 1rem;
+    max-height: 26rem;
+    max-width: none;
+    padding: 2rem 3rem 3rem 2rem;
+    margin: 0rem 0rem 2rem 4rem;
+  }
+
+  .outer-box-xena-text{
+    border:0.2rem solid #fff;
+    border-radius: 1rem;
+    max-width: none;
+    padding: 2rem 2rem 3rem 2rem;
+    margin: 0rem 7rem 7rem 1rem;
+  }
+}
+
+@media (min-width: 67rem){
+
+  .book-session-button{
+    border: 0.25rem solid #fff;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: 70rem){
+  .image-spacing{
+    width:320px;
+    height: auto;
+  }
+
+  .book-session-text{
+    margin-left:8rem;
+  }
+
+  .book-imgs{
+    margin-left:8rem;
+    margin-right:8rem;
+  }
+
+  .booking{
+    max-width:80rem;
+    margin: auto;
+  }
+
+  .book-session-button{
+    border: 0.25rem solid #fff;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 10px;
+  }
+
+  .xena-text p{
+    margin-bottom:4rem;
+    font-size:1rem;
+  }
+  .xena-text h3{
+    font-size:2.5rem;
+    margin-bottom:0.5rem;
+  }
+
+  /*Name: Email: Date of Session:*/
+  .info-input label{
+    font-size: 2rem;
+  }
+  .first-name-spacing{
+    margin-bottom:1rem;
+    margin-top:0rem;
+  }
+  .input-detail{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 28rem;
+  }
+
+  /*rounded boxes of the 2 areas*/
+  .outer-box-input{
+    margin: 0rem 0rem 4rem 8rem;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+  .outer-box-xena-text{
+    margin: 0rem 8rem 14rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+}

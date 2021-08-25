@@ -1,0 +1,257 @@
+/*CSS for index (landing) page*/
+.grid{
+    display: grid;
+}
+/*Main title*/
+.index-banner h1{
+  font-size:7.5rem;
+  
+  /*https://blog.hubspot.com/website/center-text-in-css*/
+  text-align: center;
+  text-shadow: 0.25rem 0.25rem 2rem #111;
+}
+
+/*nav centers image, adds image, spaces out and keeps centered*/
+.index-banner{
+  /*https://www.capratecre.com/about-us/futuristic-banner-2/*/
+  background-image: url('img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*See Therapist Button*/
+.therapist-button{
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  font-weight: 700;
+  text-align: center;
+}
+.therapist-button-design{
+  color: black; 
+  text-decoration: none;
+  background-color: white;
+}
+.therapist-button-design:hover, .therapist-button-design:focus{
+  background-color: #c3c3c3;
+}
+/*grid for centering main see therapist button*/
+.grid.three-column-button{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*RESPONSITIVITY*/
+@media (min-width: 1rem){
+  /*banner image*/
+  .index-banner h1{
+    font-size: 0.75rem;
+    padding-top: 5rem;
+  }
+  .index-banner{
+    margin-top: 1rem;
+    height: auto;
+  }
+
+  /*Styleing because word is long*/
+  .acknowledgement h3{
+      font-size: 0.75rem;
+  }
+
+  /*button under page title*/
+  .therapist-button{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  .therapist-button-design{
+    border-radius: 1rem;
+    padding: 1rem 1.05rem;
+    font-size:1.5rem;
+  }
+
+  /*About SFU PET text styling*/
+  .info-text{
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+  }
+  .info-text p{
+    font-size: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .info-text h2{
+    font-size: 0.45rem;
+    margin-bottom: 0.75rem;
+    margin-top: 3rem;
+  }
+}
+
+/*CODE REPETITION BELOW*/
+
+@media (min-width: 12rem){
+  .info-text{
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+  }
+  .info-text p{
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .info-text h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+  }
+  
+  .index-banner{
+    height: auto;
+    margin-top: 0rem;
+  }
+  .index-banner h1{
+    font-size: 2.75rem;
+    padding-top: 3rem;
+  }
+
+  .therapist-button{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .therapist-button-design{
+    border-radius: 0.35rem;
+    padding: 0.5rem 0.25rem;
+    font-size: 0.5rem;
+  }
+
+  .acknowledgement h3{
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 16rem){
+  .acknowledgement h3{
+      font-size: 1.65rem;
+  }
+
+  .therapist-button-design{
+    border-radius: 0.35rem;
+    padding: 0.75rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+}
+
+@media (min-width: 30rem){
+  .info-text{
+    padding-left: 2.5rem;
+    padding-right:2.5rem;
+  }
+  .info-text p{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .info-text h2{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .index-banner{
+    margin-top: 0rem;
+  }
+  .index-banner h1{
+    font-size: 3.75rem;
+    padding-top: 5rem;
+  }
+
+  .therapist-button{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .therapist-button-design{
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.45rem 0.75rem 1.45rem;
+    font-size:1rem;
+  }
+  
+}
+
+@media (min-width: 41rem){
+  .therapist-button-design{
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.45rem 0.75rem 1.45rem;
+    font-size:1.25rem;
+  }
+}
+
+@media (min-width: 60rem){
+  .info-text{
+    padding-top:2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .info-text p{
+    font-size: 1.12rem;
+  }
+  .info-text h2{
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .index-banner{
+    margin-top: 0rem;
+    height: auto;
+  }
+  .index-banner h1{
+    font-size: 5rem;
+    padding-top: 10rem;
+  }
+
+  .therapist-button{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+  .therapist-button-design{
+    border-radius: 1rem;
+    font-size:1.75rem;
+    padding: 1rem 1.05rem;
+  }
+}
+
+/*desktop*/
+@media (min-width: 70rem){
+  .info-text{
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+  .info-text p{
+    max-width:50rem;
+    font-size: 1.25rem;
+  }
+  .info-text h2{
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .index-banner{
+    margin-top: 0rem;
+    height: auto;
+  }
+  .index-banner h1{
+    font-size: 6.75rem;
+    padding-top: 13rem;
+  }
+
+  .therapist-button{
+    text-align: center;
+    margin-bottom: 11rem;
+  }
+  .therapist-button-design{
+    padding: 1.25rem 3rem;
+    border-radius: 1rem;
+  }
+}

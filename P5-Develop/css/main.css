@@ -1,0 +1,391 @@
+/*general CSS that applies to everything*/
+/*Mostly styling for footer and nav*/
+
+/*https://stackoverflow.com/questions/9648910/how-to-set-the-background-color-of-the-whole-page-in-css
+  text color*/
+/*set each page to a default color and sizing*/
+*{
+    color: white;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+}
+
+/*Keeps all text same size and the web color grey*/
+body{
+    background-color: #38384e;
+    font-family:Roboto;
+    font-size: 1.25rem;
+}
+
+/*Initial nav and footer preset code*/
+/*nav colouring and decor*/
+header a{
+  text-decoration: none;
+}
+nav {
+  background: #767680;
+}
+nav a {
+  color: #fff;
+}
+
+/*nav logo top center*/
+.header-logo {
+  padding: 3rem 0rem 3rem 0rem;
+  font-size:4.5rem;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  background: #4d4d4d;
+}
+.header-logo:hover, .header-logo:focus{
+  color: rgb(192, 211, 247);
+}
+
+/*footer*/
+.footer-container {
+  background-color: #0a0b1b;
+  height: 15vh;
+  margin-top:12rem;
+}
+.footer {
+  background-color:#0a0b1b;
+  color: #fff;
+}
+.footer-heading{
+  background-color:#0a0b1b;
+}
+.footer-button a{
+  color: black; 
+  font-weight: 700;
+  text-decoration: none;
+}
+.grid.footer-column{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/*RESPONSIVITY*/
+
+@media (min-width: 1rem){
+  .nav-centering{
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size:0.75rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .footer-button{
+    font-size: 0.65rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #b4b4b4;
+    border: 0.2rem solid #fff;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  nav a{
+    text-decoration: none;
+  }
+
+  .nav-button{
+    background-color: #38384e;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  .nav-button-about:hover, .nav-button-therapist:hover, .nav-button-booking:hover, .nav-button-about:focus, .nav-button-therapist:focus, .nav-button-booking:focus{
+    background-color: #38384e;
+  }
+
+  .header-logo{
+    font-size:1.25rem;
+    padding-bottom: 0rem;
+  }
+
+  .footer-1 h2{
+    padding-top:1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+  }
+
+  .footer-1 p {
+    background-color:#0a0b1b;
+    margin-left: 1rem;
+    font-size:0.5rem;
+    
+  }
+
+  .footer-2 h2{
+    padding-top:1.5rem;
+    text-align:left;
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+  }
+  .footer-2 p {
+    background-color:#0a0b1b;
+    font-size:0.5rem;
+    
+  }
+  
+  .footer-3 h2{
+    padding-top:0.75rem;
+    text-align:left;
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+  }
+
+  .footer-button{
+    font-size:0.25rem;
+    margin-top:1rem;
+    text-align: center;
+    background-color: #b4b4b4;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  .footer-button:hover, .footer-button:focus{
+    background-color: #4d4d4d;
+    color: white;
+  }
+}
+
+@media (min-width: 17rem){
+  /*Nav logo centering and styling*/
+  .nav-centering{
+    font-size:1.25rem;
+  }
+  .header-logo{
+    font-size:2.25rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /*Footer styling in sections, social media, location and book now button*/
+  .footer-1 h2{
+    padding-top:1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+  }
+  .footer-1 p {
+    background-color:#0a0b1b;
+    margin-left: 1rem;
+    font-size:0.5rem;
+  }
+  .footer-2 h2{
+    padding-top:1.5rem;
+    text-align:left;
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+  }
+  .footer-2 p {
+    background-color:#0a0b1b;
+    font-size:0.5rem;
+  }
+  .footer-3 h2{
+    padding-top:1.75rem;
+    text-align:left;
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+  }
+  .footer-button{
+    font-size:0.5rem;
+    margin-top:1rem;
+    text-align: center;
+    background-color: #b4b4b4;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .footer-button:hover, .footer-button:focus{
+    background-color: #4d4d4d;
+    color: white;
+  }
+}
+
+@media (min-width: 30rem){
+  .header-logo{
+    font-size:3.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /*Footer*/
+  .footer-1 h2{
+    padding-top:1.25rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size:1.25rem;
+  }
+  .footer-1 p {
+    background-color:#0a0b1b;
+    margin-left: 1.5rem;
+    font-size:0.75rem;
+  }
+  .footer-2 h2{
+    padding-top:1.25rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size:1.25rem;
+  }
+  .footer-2 p {
+    background-color:#0a0b1b;
+    font-size:0.75rem;
+    padding-left: 2rem;
+  }
+  .footer-3 h2{
+    padding-top: 1.25rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1.25rem;
+  }
+  .footer-container {
+    height: 30vh;
+  }
+  .footer-button{
+    font-size:1rem;
+    margin-top:1rem;
+    margin-left: 3rem;
+    text-align: center;
+    background-color: #b4b4b4;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .footer-button:hover, .footer-button:focus{
+    background-color: #4d4d4d;
+    color: white;
+  }
+}
+
+@media (min-width: 46rem){
+  .nav-centering{
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: 1.45rem;
+  }
+}
+
+@media (min-width: 58rem){
+  /*Nav styling for desktop change*/
+  .nav-centering{
+    font-size: 1.25rem;
+  }
+  /*New grids of nav for deskop size*/
+  .grid.five-column{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  /*nav links*/
+  /*removes underline*/
+  nav a{
+    text-decoration: none;
+  }
+  .nav-button{
+    background-color: #38384e;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .nav-button-about{
+    text-align: left;
+  }
+  .nav-booking{
+    text-align: right;
+  }
+
+  .footer{
+    max-width: 55rem;
+    margin: auto;
+  }
+}
+
+/*Code repetition*/
+
+@media (min-width: 70rem){
+  .header-logo{
+    font-size:4.25rem;
+    padding-bottom: 3rem;
+  }
+
+  /*Footer*/
+  .footer-1 h2{
+    padding-top:2.5rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-size:2rem;
+  }
+  .footer-container {
+    background-color: #0a0b1b;
+    height: 35vh;
+    margin-top:12rem;
+  }
+  .footer{
+    max-width: 85rem;
+    margin: auto;
+  }
+  .footer-1 p {
+    background-color:#0a0b1b;
+    margin-left: 3rem;
+    font-size:1.25rem;
+  }
+  .footer-2 h2{
+    padding-top:2.5rem;
+    text-align:left;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    font-size:2rem;
+  }
+  .footer-2 p {
+    background-color:#0a0b1b;
+    font-size:1.25rem;
+    margin-left: 0rem;
+  }
+  .footer-3 h2{
+    padding-top: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+  }
+  .footer-button{
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #b4b4b4;
+    text-decoration: none;
+    padding: 0.75rem 0.75rem;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .footer-button:hover, .footer-button:focus{
+    background-color: #4d4d4d;
+    color: white;
+  }
+}

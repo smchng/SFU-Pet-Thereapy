@@ -1,0 +1,153 @@
+<!--HTML for booking page-->
+
+<!doctype html>
+<html lang="en"> 
+
+    <head>
+      <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <title>SFU Pet Therapy</title>
+
+	  	<link rel="stylesheet"  href="css/main.css"> 
+      <link rel="stylesheet" href="css/main-booking.css"> 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    </head>
+    
+    <body>
+      <header>
+        <!--top part of every page-->
+        <div>
+          <!--a |SFU PET| logo text centered at the top-->
+          <a class="header-logo" href="index.html">SFU PET</a>
+        </div>
+
+        <nav>
+          <!--the navigation with 2 types of grids and centering
+          5 columns on desktop and 1 column on mobile-->
+          <div class="grid nav-centering five-column">
+            <!--empty lines to separate the sections and keep in the center-->
+            <div>&nbsp;</div>
+            <!--3 separated button to navigate through the website-->
+            <div class="nav-button-about">
+              <a class="nav-button-about" href="index.html">About SFU PET</a>
+            </div>
+            <!-- same classes are assigned twice to apply placement and interaction designs-->
+            <div class="nav-button-therapist">
+              <a class="nav-button-therapist" href="Therapists.html">Therapists Available</a>
+            </div>
+
+            <div class="nav-booking nav-button-booking">
+              <a class="nav-button-booking" href="Booking.html">Book a Therapist</a>
+            </div>
+            <div>&nbsp;</div>
+          </div>
+        </nav>
+      </header>
+
+        <!-- general section class to organize content together-->
+        <div class="booking">
+          <!--title of page-->
+          <div class="book-session-text">
+            <h1>Book a session with:</h1>
+          </div>
+
+          <!--uses columns to align the images depending on screen size
+          image sources can be found in img folder-->
+          <div class="grid two-column-input-imgs">
+              <div class="grid two-column-imgs book-imgs">
+                  <img class="image-spacing xena left-img-margin" src='img/xena.jpg' alt="A brown fuzzy bunny rabbit">
+                  <img class="image-spacing" src='img/dandylion.jpg' alt="a white and grey kitten on a bed or cushion">
+                  <img class="image-spacing" src='img/thumper.jpg' alt="a grey chinchilla on a brown shelf">
+                  <img class="image-spacing" src='img/cali.jpg' alt="an orange cat with white paws under a ledge">
+              </div>
+            
+              <!--2 column grid to align the 2 sections of input and text-->
+              <div class="grid two-column">
+                <!--class to style the text section of page and the boxes surrounding it-->
+                <div class="info-input outer-box-input">
+                  <div>
+                    <!--https://html5doctor.com/element-index/#label -> learned about input boxes and how to indentify them-->
+
+                    <!--label for Name:-->
+                    <!--Association in Name: and input box-->
+                    <label for="first-name"><strong>Name:</strong></label>
+                    <!--actual input rectangle-->
+                    <input id="first-name" type="text" class="first-name-spacing input-detail" placeholder="first">
+                  </div>
+
+                  <div >
+                    <!--Warning error triggered when run in validator due to low quality name.
+                        Was allowed to leave in (discussed in group chat)-->
+                    <input id="last-name" type="text" class="input-detail" placeholder="last">
+                  </div>
+
+                  <!--empty line-->
+                  <div>&nbsp;</div>
+
+                  <div>
+                    <!--label for Email:-->
+                    <label for="email"><strong>Email:</strong></label>
+                    <input id="email" type="email" class="input-spacing input-detail" placeholder="john.smith@gmail.com"> 
+                  </div>
+
+                  <!--empty line--> 
+                  <div> &nbsp;</div>
+
+                  <div>
+                    <!--label for Date of Session:-->
+                    <label for="date"><strong>Date for Session:</strong></label>
+                    <input id="date" class="input-detail" type="date">  
+                  </div>
+                </div>
+                
+                <!--Xena booking text on right side of info input area-->
+                <div class="xena-text outer-box-xena-text">
+                  <h1>Xena</h1>
+                  <p>Xena is hopping up and down at the opportunity to meet. Please provide us with the following information to proceed with your booking:</p>
+                  <a href="Confirmation.html" class="book-session-button">Book Session</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+        <!--FOOTER-->
+        <div>
+          <!--Multiple column and classes to create background-color styling and aligning the content according to screen size-->
+          <div class="footer-container">
+            <div class="footer grid footer-column">
+              <!--Different sections of code-->
+              <div class="footer-1">
+                <h2>Social Media</h2>
+                <p>SFU PET</p>
+                <p>@SFU_PET (Twitter)</p>
+                <p>/SFU_PET (Facebook)</p>
+                <p>@SFU_PET (Instagram)</p>
+              </div>
+
+              <div>
+                <div class="footer-2">
+                  <h2>Location</h2>
+                  <p>8888 University Drive</p>
+                  <p>Burnaby, BC, Canada</p>
+                  <p>V5A 1S6</p>
+                  <p>1 778 782 1234</p>
+                </div>
+              </div>
+
+              <div class="h2-spacing">
+                <div class="footer-3">
+                  <h2>Book A Therapist Now</h2>
+                  <a class="footer-button" href="Therapists.html">See Therapists</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+    </body>
+
+</html>

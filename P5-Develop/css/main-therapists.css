@@ -1,0 +1,289 @@
+/*CSS for all therapists page*/
+.grid{
+    display: grid;
+    box-sizing: border-box;
+}
+
+/*book session button and name shifted to align everything*/
+.name-indent a{
+  text-align: center;
+  margin: 0rem 4.5rem;
+}
+
+/*book button on each therapists section*/
+.book-button-design{
+  background-color: #777777;
+  color: white;
+  text-decoration: none;
+  border: 0.35rem solid white;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.book-button-design:hover, .book-button-design:focus {
+  background-color: #4d4d4d;
+  
+}
+
+/*RESPONSIVITY*/
+@media (min-width: 5rem){
+  /*starts off with all content stacked*/
+  .grid.one-column{
+    grid-template-columns: 1fr;
+  }
+  .grids.intro-columns{
+    grid-template-columns: 1fr;
+  }
+
+  /*book button styling next/under page title*/
+  .book-button-design{
+    padding: 0.5rem 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+  }
+  .book-button{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  /*Individual therapist section styling*/
+  .therapists{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .cali-section img, .danylion-section img, .xena-section img, .thumper-section img{
+    width:auto;
+    height: auto;
+    max-width: 80vw;
+  }
+
+  /*intro p to therapists*/
+  .therapist-intro p{
+    max-width: 32rem;
+    font-size: 1rem;
+    padding: 0rem 0rem 3rem 0rem;
+  }
+
+  /*spaces and aligns page title*/
+  .therapist-intro h1{
+    padding: 4rem 0rem 0rem 0rem;
+    font-size: 1.75rem;
+  }
+
+  /*Intro text styling*/
+  .therapist-text p{
+    line-height: 1.25rem;
+    font-size: 1rem;
+    max-width: 32rem;
+    margin-top: 1.75rem;
+    margin-bottom: 6rem;
+  }
+
+  /*pet name aligned and spaced*/
+  .name-indent h1{
+    padding: 0rem 0rem 0rem 0rem;
+    font-size: 2rem;
+    line-height: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 24rem){
+  /*Therapist images max-size adjusted*/
+  .cali-section img, .danylion-section img, .xena-section img, .thumper-section img{
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 30rem){
+
+  /*intro p to therepists*/
+  .therapist-intro p{
+    max-width: 31rem;
+  }
+
+  /*Button sizing edited*/
+  .book-button-design{
+    padding:1rem 6.5rem;
+  }
+}
+
+/*CODE REPETITION BELOW*/
+
+@media (min-width: 44rem){
+  .therapists{
+    margin-left: 7rem;
+    margin-right: 5rem;
+  }
+
+  .cali-section img, .danylion-section img, .xena-section img, .thumper-section img{
+    width:500px;
+    height: auto;
+  }
+
+  .book-button{
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  .book-button-design{
+    padding: 1rem 8.5rem;
+    font-size: 1.15rem;
+    border-radius: 1.25rem;
+  }
+
+  /*intro p to therepists*/
+  .therapist-intro p{
+    max-width: 31rem;
+    font-size: 1rem;
+    padding: 0rem 0rem 3rem 0rem;
+  }
+
+  /*spaces and aligns page title*/
+  .therapist-intro h1{
+    padding: 4rem 0rem 0rem 0rem;
+    font-size: 2.25rem;
+  }
+}
+
+
+
+@media (min-width: 57rem){
+  /*New grids to separate therapists in to sections*/
+  .grid.two-column{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*New grids to separate therapist intro and button*/
+  .grid.intro-columns{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .book-button{
+    margin-top: 7rem;
+    margin-left: 6rem;
+  }
+  .book-button-design{
+    padding: 1.75rem 4.5rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .cali-section img, .danylion-section img, .xena-section img, .thumper-section img{
+    width:auto;
+    height: auto;
+    max-width: 92%;
+  }
+
+  /*intro p to therapists*/
+  .therapist-intro p{
+    max-width: 32rem;
+    font-size: 1rem;
+    margin-left: 0rem;
+    padding: 0rem 0rem 3rem 0rem;
+  }
+
+  /*spaces and aligns page title*/
+  .therapist-intro h3{
+    padding: 4rem 0rem 0rem 0rem;
+    font-size: 2.25rem;
+    margin-left: 2rem;
+  }
+
+  /*therapist info of each petspaces and aligns*/
+  .therapist-text p{
+    line-height: 1.25rem;
+    font-size: 1rem;
+    max-width: 22rem;
+    margin-top: 1.25rem;
+    margin-bottom: 5rem;
+  }
+
+  /*pet name aligned and spaced*/
+  .name-indent h3{
+    padding: 0rem 0rem 0rem 0rem;
+    font-size: 2rem;
+    line-height: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 57rem){
+  /*Button padding again*/
+  .book-button{
+    margin-top: 8rem;
+    margin-left: 7rem;
+    margin-bottom: 3rem;
+  }
+  .book-button-design{
+    padding: 2rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media (min-width: 62rem){
+  /*Button padding again*/
+  .book-button{
+    margin-top: 8rem;
+    margin-left: 7rem;
+    margin-bottom: 3rem;
+  }
+  .book-button-design{
+    padding: 1.75rem 3.5rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media (min-width: 71rem){
+  .therapists{
+    max-width: 70rem;
+    margin: auto;
+  }
+
+  .cali-section img, .danylion-section img, .xena-section img, .thumper-section img{
+    width: 324;
+    height: auto;
+  }
+
+  /*intro p to therepists*/
+  .therapist-intro p{
+    max-width: 40rem;
+    padding: 0rem 0rem 2rem 0rem;
+  }
+  /*spaces and aligns page title*/
+  .therapist-intro h3{
+    padding: 4rem 0rem 0rem 0rem;
+  }
+
+  .book-button{
+    margin-top: 8rem;
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+  }
+  .book-button-design{
+    font-size: 1.5rem;
+    margin-left:7.5rem;
+  }
+
+  /*therapist info of each pet spaces and aligns*/
+  .therapist-text p{
+    line-height: 1.25rem;
+    font-size: 1rem;
+    max-width: 28rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  /*pet name aligned and spaced*/
+  .name-indent h3{
+    padding: 0rem 0rem 0rem 0rem;
+    line-height: 0rem;
+    margin-top: 2.5rem;
+  }
+}

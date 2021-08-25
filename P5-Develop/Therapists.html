@@ -1,0 +1,177 @@
+<!--HTML for Therapist page-->
+
+<!doctype html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>SFU Pet Therapy</title>
+
+		    <link rel="stylesheet" href="css/main.css"> 
+        <link rel="stylesheet" href="css/main-therapists.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+      </head>
+    
+    <body>
+      <header>
+        <!--top part of every page-->
+        <div>
+          <!--a |SFU PET| logo text centered at the top-->
+          <a class="header-logo" href="index.html">SFU PET</a>
+        </div>
+
+        <nav>
+          <!--the navigation with 2 types of grids and centering
+          5 columns on desktop and 1 column on mobile-->
+          <div class="grid nav-centering five-column">
+            <!--empty lines to separate the sections and keep in the center-->
+            <div>&nbsp;</div>
+            <!--3 separated button to navigate through the website-->
+            <div class="nav-button-about">
+              <a class="nav-button-about" href="index.html">About SFU PET</a>
+            </div>
+            <!-- same classes are assigned twice to apply placement and interaction designs-->
+            <div class="nav-button-therapist">
+              <a class="nav-button-therapist" href="Therapists.html">Therapists Available</a>
+            </div>
+
+            <div class="nav-booking nav-button-booking">
+              <a class="nav-button-booking" href="Booking.html">Book a Therapist</a>
+            </div>
+            <div>&nbsp;</div>
+          </div>
+        </nav>
+      </header>
+
+      <!--General class to align entire section accordingly-->
+      <div class="therapists">
+        <!--intro to therapists-->
+          <!--grids to separate the booking button and title on desktop-->
+          <div class="grid intro-columns">
+            <div class="therapist-intro">
+              <h1>Therapists Available</h1>
+              <p>At the moment we have four therapists (aka. furry friends) available for sessions, and we are hoping to have even more soon! Please take a look our listing to figure out which one would be best for you and then select times at which you would like to meet up with a therapist.</p>
+            </div>
+            <div class="book-button">
+              <a class="book-button-design" href="Booking.html">Pick Therapist</a>
+            </div>
+          </div>
+
+        <!--Entire general class to structure the therapist info sections depending on screen size-->
+        <div class="grid therapist-structure one-column two-column">
+
+          <!--xena section of info is first-->
+          <div class="xena-section">
+            <!--first is the image in the section-->
+            <figure>
+              <!--https://www.pinterest.ca/pin/730638739529064972/-->
+              <img src='img/xena.jpg' alt="A brown fuzzy bunny rabbit"> 
+            </figure>
+
+            <!--the her name with a styling class-->
+            <div class="name-indent">
+              <h1><strong>Xena</strong></h1>
+            </div>
+
+            <!--then the info text under the name-->
+            <div class="therapist-text">
+              <p>She isn’t a warrior princess, but she is quite the lover. Say hello to Xena! This big girl is rather bouncy when she first meets you. She is just excited to make a new friend and maybe get a yummy treat from you. She is a pretty good walker, although she can pull some. This girl just has places to go and people to see after all. Xena does well on stairs and she loves to check out all the new smells we have here in the city. She also has her fun side where she runs around just acting silly. She is a beauty and she is hard to pass up. If you are interested in meeting Xena, please book a session.</p>
+            </div>
+          </div>
+          
+          <!--dandylion is second-->
+          <!--Same order of info-->
+          <div class="danylion-section">
+            <figure>
+              <!--https://www.medicalnewstoday.com/articles/322594-->
+              <img src='img/dandylion.jpg' alt="a white and grey kitten on a bed or cushion"  >
+            </figure>
+
+            <div class="name-indent">
+              <h1><strong>Dandylion</strong></h1>
+            </div>
+            
+            <!--separate styling class to adjust section spacing-->
+            <div class="therapist-text">
+              <p>Vocal and confident, Dandylion is a bright girl that is looking for love. A connoisseur of head butts, she wants to be where you are and will stick to you like glue. She is not afraid to ask for attention and is often found perched in a cat tree sleeping. Never fear, Dandylion is instantly awake and active once a human is around. Looking for a snuggly companion that wants to be in your lap all day? Dandylion is just a session-booking away.</p>
+            </div>
+          </div>
+
+          <!--thumper third-->
+          <!--similar code to thumper-->
+          <div class="thumper-section">
+            <figure>
+              <!--https://petkeen.com/best-chinchilla-hammocks/-->
+              <img src='img/thumper.jpg' alt="a grey chinchilla on a brown shelf"  >
+            </figure>
+
+            <div class="name-indent">
+              <h1><strong>Thumper</strong></h1>
+            </div>
+
+            <!--Thumper p-->
+            <div class="therapist-text">
+              <p>This great chinchilla loves being scratched behind his ears and napping on a lap. Is very sweet and even though he has only one front paw, it does not slow him down. He loves to eat, play, and take dust baths all day. If you’re looking for an extra cute dust-bunny, Thumper is available for therapy sessions now.</p>
+            </div>
+          </div>
+
+          <!--cali fourth-->
+          <div class="cali-section">
+            <figure>
+              <!--https://www.findcatnames.com/ginger-cat-names/-->
+              <img src='img/cali.jpg' alt="an orange cat with white paws under a ledge"  >
+            </figure>
+
+            <div class="name-indent">
+              <h1><strong>Cali</strong></h1>
+            </div>
+            
+              <!--Cali p-->
+            <div class="therapist-text">
+              <p>Cali is a friendly and affectionate gal, and while she is a mature lady of about 10 years, she plays like a kitten! As expected with a Manx, she has a cute bobbed tail. Cali is up for anywhere that she can have cuddles and lap time with humans. If you are up for cuddles and lap time, sign up for a session with Cali.</p>
+            </div>
+          </div>       
+        </div>
+      </div>
+
+        <!--FOOTER-->
+        <div>
+          <!--Multiple column and classes to create background-color styling and aligning the content according to screen size-->
+          <div class="footer-container">
+            <div class="footer grid footer-column">
+              <!--Different sections of code-->
+              <div class="footer-1">
+                <h2>Social Media</h2>
+                <p>SFU PET</p>
+                <p>@SFU_PET (Twitter)</p>
+                <p>/SFU_PET (Facebook)</p>
+                <p>@SFU_PET (Instagram)</p>
+              </div>
+
+              <div>
+                <div class="footer-2">
+                  <h2>Location</h2>
+                  <p>8888 University Drive</p>
+                  <p>Burnaby, BC, Canada</p>
+                  <p>V5A 1S6</p>
+                  <p>1 778 782 1234</p>
+                </div>
+              </div>
+
+              <div class="h2-spacing">
+                <div class="footer-3">
+                  <h2>Book A Therapist Now</h2>
+                  <a class="footer-button" href="Therapists.html">See Therapists</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </body>
+
+
+</html>
